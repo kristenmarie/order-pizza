@@ -30,8 +30,11 @@ $(document).ready(function(){
       toppings.push($(this).val());
     });
     var orderedPizza = new Pizza(size, toppings, cost);
-    console.log(orderedPizza);
     orderedPizza.total();
-    console.log(orderedPizza.cost.toFixed(2));
+    $("#order-confirmation").append("$" + orderedPizza.cost.toFixed(2) +
+      "<br><h4>Selected size:</h4> <p>"  +  orderedPizza.size +
+      "</p><br><h4>Selected toppings:</h4> <p>" + orderedPizza.toppings + "</p>");
+    $("#order-confirmation").show();
+    $("#pizza-order").hide();
   });
 });
