@@ -26,7 +26,6 @@ Pizza.prototype.total = function(size, toppings) {
   }
 }
 
-
 // Interface Logic
 $(document).ready(function(){
   $("input#delivery").click(function(){
