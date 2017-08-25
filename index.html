@@ -88,12 +88,12 @@
             <label for="orderType" class="control-label choices">Pickup or Delivery:</label>
             <br>
             <label class="custom-control custom-radio">
-              <input id="delivery" name="radio" type="radio" class="custom-control-input">
+              <input id="delivery" name="orderType" type="radio" class="custom-control-input" value="delivery">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description">Delivery</span>
             </label>
             <label class="custom-control custom-radio">
-              <input id="pickup" name="radio" type="radio" class="custom-control-input">
+              <input id="pickup" name="orderType" type="radio" class="custom-control-input" value="pickup">
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description">Pickup</span>
             </label>
@@ -127,6 +127,7 @@
         </div>
         <div id="order-confirmation">
           <h2>Thank you for placing your order with us!</h2>
+          <span id="customer-address"></span>
           <h4>Your total is:</h4>
         </div>
       </div>
