@@ -1,0 +1,41 @@
+select {
+  max-width: 300px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.form-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 6px;
+}
+
+ #order-confirmation{
+  display: none;
+  text-align: center;
+  padding: 20px;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 6px;
+}
+
+.jumbotron {
+  text-align: center;
+  font-family: 'Unica One', cursive;
+}
+
+.jumbotron p {
+  font-size: 25px;
+}
+
+.btn-success {
+  background-color: #3c763d;
+}
