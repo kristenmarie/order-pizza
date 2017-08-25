@@ -6,11 +6,11 @@ function Pizza(size, toppings, cost) {
 }
 
 Pizza.prototype.total = function(size, toppings) {
-  if(this.size === "small") {
+  if(this.size === "Small") {
     this.cost += 12.99;
-  } else if(this.size === "medium") {
+  } else if(this.size === "Medium") {
     this.cost += 16.99;
-  } else if(this.size === "large") {
+  } else if(this.size === "Large") {
     this.cost += 19.99;
   }
   for(i = 0; i < this.toppings.length; i++) {
@@ -31,10 +31,11 @@ $(document).ready(function(){
     });
     var orderedPizza = new Pizza(size, toppings, cost);
     orderedPizza.total();
-    $("#order-confirmation").append("$" + orderedPizza.cost.toFixed(2) +
-      "<br><h4>Selected size:</h4> <p>"  +  orderedPizza.size +
-      "</p><br><h4>Selected toppings:</h4> <p>" + orderedPizza.toppings + "</p>");
+    $("#order-confirmation").append("<h3>$" + orderedPizza.cost.toFixed(2) +
+      "</h3><br><h4>Selected size:</h4> <p>"  +  orderedPizza.size +
+      "</p><br><h4>Selected toppings:</h4> <p>" + orderedPizza.toppings +
+      '</p><br><h2>Enjoy!</h2><br><img src="img/pizza2.webp">');
     $("#order-confirmation").show();
-    $("#pizza-order").hide();
+    $(".form-container").hide();
   });
 });
